@@ -332,17 +332,19 @@ export class NgxTooltipComponent implements OnChanges {
       await nextTickRender(); // wait for the placement class to be rendered,
       // in order to have the bridge (padding) applied
 
+      const dialogPositionStyleProps = getDialogPositionStyle(
+        availablePosition,
+        this.dialogWithBridgeRef()!.nativeElement, // dialogWithBridgeRef have the bridge in place in this point
+        // so we can properly compute the position, taking into account the bridge
+        this.relativeElementRef()!.nativeElement,
+        this.scrollableContainer()?.nativeElement
+      );
+
       this.dialogPositionStyle.set({
         ...this.dialogPositionStyle(),
         value: {
           ...this.dialogPositionStyle().value,
-          ...getDialogPositionStyle(
-            availablePosition,
-            this.dialogWithBridgeRef()!.nativeElement, // dialogWithBridgeRef have the bridge in place in this point
-            // so we can properly compute the position, taking into account the bridge
-            this.relativeElementRef()!.nativeElement,
-            this.scrollableContainer()?.nativeElement
-          ),
+          ...dialogPositionStyleProps,
           '--scrollbar-height': `${
             window.innerHeight - document.documentElement.clientHeight
           }px`,
