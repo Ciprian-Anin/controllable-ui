@@ -11,16 +11,15 @@ import {
 import { NgxTooltipComponent } from '@controllable-ui/ngx-tooltip';
 
 @Component({
-  selector: 'app-html-content-tooltip-customized',
-  standalone: true,
-  imports: [
-    CommonModule,
-    NgxTooltipComponent
-  ],
-  templateUrl: './html-content-tooltip-customized.component.html',
-  styleUrl: './html-content-tooltip-customized.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-html-content-tooltip-customized',
+    imports: [
+        CommonModule,
+        NgxTooltipComponent
+    ],
+    templateUrl: './html-content-tooltip-customized.component.html',
+    styleUrl: './html-content-tooltip-customized.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class HtmlContentTooltipCustomizedComponent {
   scrollableContainer = input<ElementRef>();

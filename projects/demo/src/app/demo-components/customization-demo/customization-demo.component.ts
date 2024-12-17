@@ -12,19 +12,17 @@ import { LightTooltipCustomizedComponent } from '../light-tooltip-customized/lig
 import { TooltipWithCloseActionDemoComponent } from '../tooltip-with-close-action-demo/tooltip-with-close-action-demo.component';
 
 @Component({
-  selector: 'app-customization-demo',
-  standalone: true,
-  imports: [
-    CommonModule,
-
-    LightTooltipCustomizedComponent,
-    BootstrapTooltipCustomizedComponent,
-    HtmlContentTooltipCustomizedComponent,
-    TooltipWithCloseActionDemoComponent,
-  ],
-  templateUrl: './customization-demo.component.html',
-  styleUrl: './customization-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-customization-demo',
+    imports: [
+        CommonModule,
+        LightTooltipCustomizedComponent,
+        BootstrapTooltipCustomizedComponent,
+        HtmlContentTooltipCustomizedComponent,
+        TooltipWithCloseActionDemoComponent,
+    ],
+    templateUrl: './customization-demo.component.html',
+    styleUrl: './customization-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CustomizationDemoComponent {
   scrollableContainerElement = input<ElementRef>();

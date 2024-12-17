@@ -10,13 +10,12 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-no-wrapping-width-tooltip',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './no-wrapping-width-tooltip.component.html',
-  styleUrl: './no-wrapping-width-tooltip.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-no-wrapping-width-tooltip',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './no-wrapping-width-tooltip.component.html',
+    styleUrl: './no-wrapping-width-tooltip.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class NoWrappingWidthTooltipComponent {
   scrollableContainer = input<ElementRef>();

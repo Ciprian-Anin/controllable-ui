@@ -9,12 +9,11 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-showing-and-hiding-with-delay-demo',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './showing-and-hiding-with-delay-demo.component.html',
-  styleUrl: './showing-and-hiding-with-delay-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-showing-and-hiding-with-delay-demo',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './showing-and-hiding-with-delay-demo.component.html',
+    styleUrl: './showing-and-hiding-with-delay-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShowingAndHidingWithDelayDemoComponent {
   scrollableContainerElement = input<ElementRef>();

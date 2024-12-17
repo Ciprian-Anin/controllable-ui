@@ -23,34 +23,33 @@ import { VariableWidthDemoComponent } from './demo-components/variable-width-dem
 import { DemoComponent } from './demo/demo.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    // ANGULAR
-    RouterOutlet,
-    CommonModule,
-    MarkdownModule,
-    // CUSTOM COMPONENTS
-    TableWithTooltipsDemoComponent,
-    PositionedTooltipsComponent,
-    TooltipCornersSquareDemoComponent,
-    GridWithTooltipsDemoComponent,
-    BasicTooltipComponent,
-    DemoComponent,
-    TooltipWithArrowComponent,
-    TooltipWithDistanceFromAnchorComponent,
-    PositionedTooltipWithLongContentComponent,
-    CustomizationDemoComponent,
-    TriggersDemoComponent,
-    VariableWidthDemoComponent,
-    InteractiveDemoComponent,
-    DisabledElementsDemoComponent,
-    TransitionsDemoComponent,
-    ShowingAndHidingWithDelayDemoComponent,
-    StrategyDemoComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [
+        // ANGULAR
+        RouterOutlet,
+        CommonModule,
+        MarkdownModule,
+        // CUSTOM COMPONENTS
+        TableWithTooltipsDemoComponent,
+        PositionedTooltipsComponent,
+        TooltipCornersSquareDemoComponent,
+        GridWithTooltipsDemoComponent,
+        BasicTooltipComponent,
+        DemoComponent,
+        TooltipWithArrowComponent,
+        TooltipWithDistanceFromAnchorComponent,
+        PositionedTooltipWithLongContentComponent,
+        CustomizationDemoComponent,
+        TriggersDemoComponent,
+        VariableWidthDemoComponent,
+        InteractiveDemoComponent,
+        DisabledElementsDemoComponent,
+        TransitionsDemoComponent,
+        ShowingAndHidingWithDelayDemoComponent,
+        StrategyDemoComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'ngx-tooltip';

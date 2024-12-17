@@ -11,13 +11,12 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-positioned-tooltip-with-long-content',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './positioned-tooltip-with-long-content.component.html',
-  styleUrl: './positioned-tooltip-with-long-content.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-positioned-tooltip-with-long-content',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './positioned-tooltip-with-long-content.component.html',
+    styleUrl: './positioned-tooltip-with-long-content.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class PositionedTooltipWithLongContentComponent {
   scrollableContainer = input<ElementRef>();

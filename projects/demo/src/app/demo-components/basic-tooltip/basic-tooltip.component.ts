@@ -11,13 +11,12 @@ import {
 import { NgxTooltipComponent, Placement } from '@controllable-ui/ngx-tooltip';
 
 @Component({
-  selector: 'app-basic-tooltip',
-  standalone: true,
-  imports: [CommonModule, NgxTooltipComponent],
-  templateUrl: './basic-tooltip.component.html',
-  styleUrl: './basic-tooltip.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-basic-tooltip',
+    imports: [CommonModule, NgxTooltipComponent],
+    templateUrl: './basic-tooltip.component.html',
+    styleUrl: './basic-tooltip.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class BasicTooltipComponent {
   arrow = input<boolean>(false);

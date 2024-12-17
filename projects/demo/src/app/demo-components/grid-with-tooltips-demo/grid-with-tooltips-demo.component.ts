@@ -9,12 +9,11 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-grid-with-tooltips-demo',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './grid-with-tooltips-demo.component.html',
-  styleUrl: './grid-with-tooltips-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-grid-with-tooltips-demo',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './grid-with-tooltips-demo.component.html',
+    styleUrl: './grid-with-tooltips-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GridWithTooltipsDemoComponent {
   scrollableContainerElement = viewChild<ElementRef>('scrollableContainer');

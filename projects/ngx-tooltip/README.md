@@ -32,8 +32,9 @@
 
 | Library Version | Angular Version |
 | --------------- | --------------- |
-| 0.0.7           | 17.x.x          |
+| 0.0.9           | 19.x.x          |
 | 0.0.7           | 18.x.x          |
+| 0.0.7           | 17.x.x          |
 
 ## Installation
 

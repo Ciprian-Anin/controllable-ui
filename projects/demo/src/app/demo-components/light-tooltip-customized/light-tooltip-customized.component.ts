@@ -10,13 +10,12 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-light-tooltip-customized',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './light-tooltip-customized.component.html',
-  styleUrl: './light-tooltip-customized.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-light-tooltip-customized',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './light-tooltip-customized.component.html',
+    styleUrl: './light-tooltip-customized.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class LightTooltipCustomizedComponent {
   scrollableContainer = input<ElementRef>();

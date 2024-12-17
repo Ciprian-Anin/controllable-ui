@@ -13,12 +13,11 @@ import { Placement } from '@controllable-ui/ngx-tooltip';
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-strategy-demo',
-  standalone: true,
-  imports: [CommonModule, FormsModule, BasicTooltipComponent],
-  templateUrl: './strategy-demo.component.html',
-  styleUrl: './strategy-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-strategy-demo',
+    imports: [CommonModule, FormsModule, BasicTooltipComponent],
+    templateUrl: './strategy-demo.component.html',
+    styleUrl: './strategy-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StrategyDemoComponent {
   scrollableContainerElement = input<ElementRef>();

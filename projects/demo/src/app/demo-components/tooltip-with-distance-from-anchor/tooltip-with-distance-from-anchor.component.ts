@@ -13,12 +13,11 @@ import {
 } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-tooltip-with-distance-from-anchor',
-  standalone: true,
-  imports: [CommonModule, FormsModule, BasicTooltipComponent],
-  templateUrl: './tooltip-with-distance-from-anchor.component.html',
-  styleUrl: './tooltip-with-distance-from-anchor.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-tooltip-with-distance-from-anchor',
+    imports: [CommonModule, FormsModule, BasicTooltipComponent],
+    templateUrl: './tooltip-with-distance-from-anchor.component.html',
+    styleUrl: './tooltip-with-distance-from-anchor.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TooltipWithDistanceFromAnchorComponent {
   scrollableContainer = input<ElementRef>();

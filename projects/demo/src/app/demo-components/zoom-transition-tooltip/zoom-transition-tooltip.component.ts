@@ -10,13 +10,12 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-zoom-transition-tooltip',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './zoom-transition-tooltip.component.html',
-  styleUrl: './zoom-transition-tooltip.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-zoom-transition-tooltip',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './zoom-transition-tooltip.component.html',
+    styleUrl: './zoom-transition-tooltip.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class ZoomTransitionTooltipComponent {
   scrollableContainer = input<ElementRef>();

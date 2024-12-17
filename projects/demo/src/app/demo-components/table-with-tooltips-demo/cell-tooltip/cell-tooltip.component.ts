@@ -10,15 +10,14 @@ import {
 import { NgxTooltipComponent } from '@controllable-ui/ngx-tooltip';
 
 @Component({
-  selector: 'app-cell-tooltip',
-  standalone: true,
-  imports: [
-    CommonModule,
-    NgxTooltipComponent
-  ],
-  templateUrl: './cell-tooltip.component.html',
-  styleUrl: './cell-tooltip.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-cell-tooltip',
+    imports: [
+        CommonModule,
+        NgxTooltipComponent
+    ],
+    templateUrl: './cell-tooltip.component.html',
+    styleUrl: './cell-tooltip.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CellTooltipComponent {
   scrollableContainer = input.required<ElementRef<any>>();

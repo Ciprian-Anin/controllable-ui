@@ -118,13 +118,12 @@ export type DefaultStrategyProps = BaseProps & {
 export type Props = DefaultStrategyProps | KeepCurrentPlacementStrategyProps;
 
 @Component({
-  selector: 'ngx-tooltip',
-  standalone: true,
-  imports: [CommonModule, NgxTooltipArrowComponent],
-  templateUrl: './ngx-tooltip.component.html',
-  styleUrl: './ngx-tooltip.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'ngx-tooltip',
+    imports: [CommonModule, NgxTooltipArrowComponent],
+    templateUrl: './ngx-tooltip.component.html',
+    styleUrl: './ngx-tooltip.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class NgxTooltipComponent implements OnChanges {
   open = input<boolean>();

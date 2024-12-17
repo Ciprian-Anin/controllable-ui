@@ -9,12 +9,11 @@ import {
 import { BasicTooltipComponent } from '../basic-tooltip/basic-tooltip.component';
 
 @Component({
-  selector: 'app-triggers-demo',
-  standalone: true,
-  imports: [CommonModule, BasicTooltipComponent],
-  templateUrl: './triggers-demo.component.html',
-  styleUrl: './triggers-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-triggers-demo',
+    imports: [CommonModule, BasicTooltipComponent],
+    templateUrl: './triggers-demo.component.html',
+    styleUrl: './triggers-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TriggersDemoComponent {
   scrollableContainerElement = input<ElementRef>();

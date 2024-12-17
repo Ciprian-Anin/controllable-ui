@@ -9,18 +9,16 @@ import {
 import { CellTooltipComponent } from './cell-tooltip/cell-tooltip.component';
 
 @Component({
-  selector: 'app-table-with-tooltips-demo',
-  standalone: true,
-  imports: [
-    // ANGULAR
-    CommonModule,
-
-    // COMPONENTS
-    CellTooltipComponent,
-  ],
-  templateUrl: './table-with-tooltips-demo.component.html',
-  styleUrl: './table-with-tooltips-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-table-with-tooltips-demo',
+    imports: [
+        // ANGULAR
+        CommonModule,
+        // COMPONENTS
+        CellTooltipComponent,
+    ],
+    templateUrl: './table-with-tooltips-demo.component.html',
+    styleUrl: './table-with-tooltips-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TableWithTooltipsDemoComponent {
   scrollableContainerElement = viewChild<ElementRef>('scrollableContainer');

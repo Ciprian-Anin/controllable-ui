@@ -10,12 +10,11 @@ import {
 import { NgxTooltipComponent } from '@controllable-ui/ngx-tooltip';
 
 @Component({
-  selector: 'app-tooltip-with-close-action-demo',
-  standalone: true,
-  imports: [CommonModule, NgxTooltipComponent],
-  templateUrl: './tooltip-with-close-action-demo.component.html',
-  styleUrl: './tooltip-with-close-action-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-tooltip-with-close-action-demo',
+    imports: [CommonModule, NgxTooltipComponent],
+    templateUrl: './tooltip-with-close-action-demo.component.html',
+    styleUrl: './tooltip-with-close-action-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TooltipWithCloseActionDemoComponent {
   scrollableContainer = input<ElementRef>();

@@ -11,17 +11,16 @@ import { FadeTransitionTooltipComponent } from '../fade-transition-tooltip/fade-
 import { ZoomTransitionTooltipComponent } from '../zoom-transition-tooltip/zoom-transition-tooltip.component';
 
 @Component({
-  selector: 'app-transitions-demo',
-  standalone: true,
-  imports: [
-    CommonModule,
-    BasicTooltipComponent,
-    FadeTransitionTooltipComponent,
-    ZoomTransitionTooltipComponent,
-  ],
-  templateUrl: './transitions-demo.component.html',
-  styleUrl: './transitions-demo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-transitions-demo',
+    imports: [
+        CommonModule,
+        BasicTooltipComponent,
+        FadeTransitionTooltipComponent,
+        ZoomTransitionTooltipComponent,
+    ],
+    templateUrl: './transitions-demo.component.html',
+    styleUrl: './transitions-demo.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TransitionsDemoComponent {
   scrollableContainerElement = input<ElementRef>();
