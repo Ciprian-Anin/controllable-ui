@@ -94,17 +94,22 @@ code {
 
 // ASIDE MENU
 .toc-container {
+  position: sticky;
+  top: 0;
+
   display: flex;
   flex-direction: column;
   gap: 0;
+
+  height: 100vh;
+  overflow: auto;
+
   mask-image: linear-gradient(
     180deg,
     #0000 0,
     #000 3rem calc(100% - 3rem),
     #0000
   );
-  position: sticky;
-  top: 0;
 }
 
 .toc {

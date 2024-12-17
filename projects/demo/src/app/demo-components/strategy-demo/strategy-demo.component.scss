@@ -1,0 +1,30 @@
+.field-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.example-tooltip-container {
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.scrollable-container-with-tooltip {
+  width: 20rem;
+  max-height: 20rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+
+  .scrollable-inner-container-with-tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200vw;
+    height: 200vh;
+  }
+}

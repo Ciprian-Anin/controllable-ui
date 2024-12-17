@@ -12,7 +12,7 @@ import { InteractiveDemoComponent } from './demo-components/interactive-demo/int
 import { PositionedTooltipWithLongContentComponent } from './demo-components/positioned-tooltip-with-long-content/positioned-tooltip-with-long-content.component';
 import { PositionedTooltipsComponent } from './demo-components/positioned-tooltips/positioned-tooltips.component';
 import { ShowingAndHidingWithDelayDemoComponent } from './demo-components/showing-and-hiding-with-delay-demo/showing-and-hiding-with-delay-demo.component';
-import { CellTooltipComponent } from './demo-components/table-with-tooltips-demo/cell-tooltip/cell-tooltip.component';
+import { StrategyDemoComponent } from './demo-components/strategy-demo/strategy-demo.component';
 import { TableWithTooltipsDemoComponent } from './demo-components/table-with-tooltips-demo/table-with-tooltips-demo.component';
 import { TooltipCornersSquareDemoComponent } from './demo-components/tooltip-corners-square-demo/tooltip-corners-square-demo.component';
 import { TooltipWithArrowComponent } from './demo-components/tooltip-with-arrow/tooltip-with-arrow.component';
@@ -29,11 +29,8 @@ import { DemoComponent } from './demo/demo.component';
     // ANGULAR
     RouterOutlet,
     CommonModule,
-
     MarkdownModule,
-
     // CUSTOM COMPONENTS
-    CellTooltipComponent,
     TableWithTooltipsDemoComponent,
     PositionedTooltipsComponent,
     TooltipCornersSquareDemoComponent,
@@ -50,6 +47,7 @@ import { DemoComponent } from './demo/demo.component';
     DisabledElementsDemoComponent,
     TransitionsDemoComponent,
     ShowingAndHidingWithDelayDemoComponent,
+    StrategyDemoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

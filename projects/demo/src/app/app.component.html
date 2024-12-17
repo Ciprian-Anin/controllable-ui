@@ -403,6 +403,24 @@
     </app-demo>
 
     <app-demo
+      id="strategy-demo"
+      [title]="'Strategy'"
+      [codeLink]="
+        'https://github.com/Ciprian-Anin/controllable-ui-angular/tree/main/projects/demo/src/app/demo-components/strategy-demo'
+      "
+    >
+      <p class="demo-info">
+        Here are some examples of customizing the component.
+      </p>
+
+      <div class="demo-content">
+        <app-strategy-demo
+          [scrollableContainerElement]="scrollableContainerElement()"
+        />
+      </div>
+    </app-demo>
+
+    <app-demo
       id="positioned-tooltips"
       [title]="'Positioned tooltips'"
       [codeLink]="
@@ -546,6 +564,12 @@
                   href="#showing-and-hiding-with-delay-demo"
                 >
                   Showing And Hiding With Delay
+                </a>
+              </li>
+
+              <li class="document-toc-item">
+                <a class="document-toc-link" href="#strategy-demo">
+                  Strategy
                 </a>
               </li>
 
