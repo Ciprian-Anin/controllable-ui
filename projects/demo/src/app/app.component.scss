@@ -31,13 +31,15 @@ code {
   padding: 0.1rem 0.5rem;
   border: 1px solid oklch(91.75% 0.004 301.42);
   border-radius: 0.25rem;
+  word-break: break-word;
 
   background: oklch(98.81% 0 0);
 }
 
 // MAIN PAGE CONTENT
 .angular-logo {
-  align-self: end;
+  align-self: start;
+  margin-top: 1rem;
   max-width: 9.2rem;
 }
 
@@ -63,6 +65,8 @@ code {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-wrapper {
@@ -75,6 +79,7 @@ code {
   padding-right: 1rem;
   height: 100vh;
   overflow: auto;
+  scroll-behavior: smooth;
 
   main {
     width: 100%;
@@ -110,6 +115,21 @@ code {
     #000 3rem calc(100% - 3rem),
     #0000
   );
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    grid-template-areas: "main";
+    grid-template-columns: minmax(0, 1fr);
+
+    main {
+      padding: 1rem;
+    }
+  }
+
+  .toc-container {
+    display: none;
+  }
 }
 
 .toc {
@@ -164,4 +184,15 @@ code {
       }
     }
   }
+}
+
+#how-to-use-it-demo {
+  max-width: 100%;
+}
+
+.demo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

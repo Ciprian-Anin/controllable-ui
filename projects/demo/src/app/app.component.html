@@ -432,10 +432,11 @@
         the source to convey direction.
       </p>
 
-      <app-positioned-tooltips
-        class="demo-content"
-        [scrollableContainer]="scrollableContainerElement()"
-      />
+      <div class="demo-content">
+        <app-positioned-tooltips
+          [scrollableContainer]="scrollableContainerElement()"
+        />
+      </div>
     </app-demo>
 
     <app-demo
@@ -461,10 +462,11 @@
         'https://github.com/Ciprian-Anin/controllable-ui-angular/tree/main/projects/demo/src/app/demo-components/tooltip-corners-square-demo'
       "
     >
-      <app-tooltip-corners-square-demo
-        class="demo-content"
-        [scrollableContainer]="scrollableContainerElement()"
-      />
+      <div class="demo-content">
+        <app-tooltip-corners-square-demo
+          [scrollableContainer]="scrollableContainerElement()"
+        />
+      </div>
     </app-demo>
 
     <app-demo
@@ -474,7 +476,9 @@
         'https://github.com/Ciprian-Anin/controllable-ui-angular/tree/main/projects/demo/src/app/demo-components/grid-with-tooltips-demo'
       "
     >
-      <app-grid-with-tooltips-demo class="demo-content" />
+      <div class="demo-content">
+        <app-grid-with-tooltips-demo />
+      </div>
     </app-demo>
 
     <app-demo

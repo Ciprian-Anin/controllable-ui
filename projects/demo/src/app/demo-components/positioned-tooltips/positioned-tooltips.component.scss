@@ -1,11 +1,13 @@
-:host {
+app-positioned-tooltips {
   width: 100%;
   height: fit-content;
+  overflow: auto;
 }
 
 .Root-demo-tooltip {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  min-width: 500px;
 
   button {
     height: 100px;

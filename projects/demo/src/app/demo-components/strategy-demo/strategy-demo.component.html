@@ -1,6 +1,11 @@
 <div class="field-container">
   <label for="strategySelect">Placement Strategy</label>
-  <select name="strategySelect" id="strategySelect" [(ngModel)]="strategy">
+  <select
+    name="strategySelect"
+    id="strategySelect"
+    [(ngModel)]="strategy"
+    style="width: 100%"
+  >
     <option value="default">Default</option>
     <option value="considerKeepingCurrentPlacement">
       Consider Keeping Current Placement Strategy
